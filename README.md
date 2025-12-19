@@ -62,7 +62,7 @@ This environment directly support evaluation and stage 3 training (RL). For stag
 We provide scripts for running inference and evaluating models (capable of verbalizing confidence) on VECBench.
 
 1. Download the model, for example, EmoCaliber from [https://huggingface.co/wudq/EmoCaliber](https://huggingface.co/wudq/EmoCaliber).
-2. Go to `inference/infer_and_eval_example.sh`. Set `cur_path` to the path of this directory, `checkpoint` to the path of targeted model, and `n_gpu` to your gpu number.
+2. Go to `inference/infer_and_eval_example.sh`. Set `cur_path` to the path of this directory, `checkpoint` to the path of targeted model, and `n_gpu` to your gpu number. This will use prompt in `input_data/test_8k.jsonl` by default (since they align with the training set of EmoCaliber). You can modify this file or customize other prompt for other MLLMs.
 3. Run `bash inference/infer_and_eval_example.sh`. This will create a folder named `$experiment_name` in `infer_results` and store inference results and evaluation metrics in there.
 4. There should be a `metric.log` and a `metric_conf.log` with tables like below:
    <pre>
