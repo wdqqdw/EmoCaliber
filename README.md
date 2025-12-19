@@ -130,8 +130,8 @@ Stage 3: Calibrating confidence expression.
 
 1. We adopt [verl](https://github.com/volcengine/verl) framework for RL. First download their repositories.
 2. Go to `train/step3_example.sh`. Set `verl_path` to path to verl directory, and `/path/to/cold/start/model (for actor_rollout_ref.model.path)` to obtained stage2 model path.
-3. Prepare `.parquet` format file for train and val. `train.parquet` can converted from `VEC-CoT/stage3_14k.jsonl`, `val.parquet` can use test split (or a subset). Please refer to [document](https://verl.readthedocs.io/en/latest/) for required parquet format. Remember to modify `verl/verl/utils/reward_score` to match your data_source.
-4. Set `/path/to/train/parquet` and `/path/to/val/parquet` accordingly.
+3. Prepare `.parquet` format file for train and val. `train.parquet` can converted from `VEC-CoT/stage3_14k.jsonl`, `val.parquet` can use test split (or a subset). Please refer to [document](https://verl.readthedocs.io/en/latest/) for required parquet format. Set `/path/to/train/parquet` and `/path/to/val/parquet` accordingly.
+4. Copy `train/cus_reward.py` to `your_verl_path/verl/utils/reward_score/` and modify `your_verl_path/verl/utils/reward_score/__init__.py` to match your data_source.
 5. The obtained model will be stored in `verl/checkpoints/$project_name/$experiemnt_name` by default.
 
 ---
