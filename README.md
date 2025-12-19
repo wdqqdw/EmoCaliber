@@ -112,4 +112,3 @@ If you find this work useful, please consider citing our paper:
   journal = {arXiv preprint arXiv:2512.15528},
   year    = {2025}
 }
-</pre>
