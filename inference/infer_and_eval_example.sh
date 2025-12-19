@@ -4,7 +4,7 @@ cur_path=/path/to/emocaliber/project
 cd $cur_path
 experiment_name=infer_and_eval_example
 model_name=qwen25_vl
-data_path=$cur_path/input_data/evaluation/test_8k.jsonl
+data_path=$cur_path/input_data/test_8k.jsonl
 output_path=$cur_path/infer_results/$experiment_name
 checkpoint=/path/to/model/checkpoint
 project_name=your_project_name #for wandb
