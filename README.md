@@ -1,6 +1,6 @@
 # EmoCaliber
 
-Project page of:
+Project page of:\
 **EmoCaliber: Advancing Reliable Visual Emotion Comprehension via Confidence Verbalization and Calibration**\
 *Daiqing Wu, Dongbao Yang, Can Ma, Yu Zhou*
 
@@ -9,7 +9,19 @@ Project page of:
 This repository provides the **code and data** introduced in our [paper](https://arxiv.org/abs/2512.15528), consisting of five key components:
 
 - **EmoCaliber**: A confidence-calibrated MLLM for Visual Emotion Comprehension (VEC). Link: [https://huggingface.co/wudq/EmoCaliber](https://huggingface.co/wudq/EmoCaliber).
+
+   ![EmoCaliber](images/m1.jpeg)
+   <div align="center">
+   <em>Figure 1: Example of EmoCaliber performing VEC.</em>
+   </div>
+   
 - **VECBench**: A unified benchmark for VEC that comprises six popular datasets. Link: [https://huggingface.co/datasets/wudq/VECBench](https://huggingface.co/datasets/wudq/VECBench).
+
+   ![VECBench](images/m3.jpeg)
+   <div align="center">
+   <em>Figure 2: Task composition of VECBench.</em>
+   </div>
+   
 - **VEC-CoT**: A dataset with high-quality image-label-CoT triplets. Link: [https://huggingface.co/datasets/wudq/VECBench/tree/main/VEC-CoT](https://huggingface.co/datasets/wudq/VECBench/tree/main/VEC-CoT).
 - **Evaluation Code**: Code for performing inference and evaluation on VECBench.
 - **Training Script**: The scripts we used to train EmoCaliber based on ms-swift (for stage 1,2) and verl (stage 3). 
