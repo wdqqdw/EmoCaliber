@@ -4,7 +4,7 @@ sudo pip install "decord" -U
 
 #We adopt ms-swift for SFT
 swift_path=/path/to/ms-swift
-cd swift_path
+cd $swift_path
 
 export GPUS_PER_NODE=8
 export NCCL_IB_QPS_PER_CONNECTION=8
