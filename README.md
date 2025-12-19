@@ -17,14 +17,35 @@ This repository provides the **code and data** introduced in our [paper](https:/
    
 - **VECBench**: A unified benchmark for VEC that comprises six popular datasets. Link: [https://huggingface.co/datasets/wudq/VECBench](https://huggingface.co/datasets/wudq/VECBench).
 
-   ![VECBench](images/m3.jpeg)
    <div align="center">
-   <em>Figure 2: Task composition of VECBench.</em>
+     <img src="images/m3.jpeg" width="72%">
+     <br>
+     <em>Figure 2: Task composition of VECBench.</em>
    </div>
    
 - **VEC-CoT**: A dataset with high-quality image-label-CoT triplets. Link: [https://huggingface.co/datasets/wudq/VECBench/tree/main/VEC-CoT](https://huggingface.co/datasets/wudq/VECBench/tree/main/VEC-CoT).
+
+   <div align="center">
+     <img src="images/vec-cot.jpeg" width="64%">
+     <br>
+     <em>Figure 3: Statistics of VEC-CoT dataset.</em>
+   </div>
+  
 - **Evaluation Code**: Code for performing inference and evaluation on VECBench.
+
+   <div align="center">
+     <img src="images/eval.jpeg" width="64%">
+     <br>
+     <em>Figure 4: Performance of EmoCaliber.</em>
+   </div>
+
 - **Training Script**: The scripts we used to train EmoCaliber based on ms-swift (for stage 1,2) and verl (stage 3). 
+
+   <div align="center">
+     <img src="images/m2.jpeg" width="100%">
+     <br>
+     <em>Figure 5: Three stage training framework.</em>
+   </div>
 
 ---
 
